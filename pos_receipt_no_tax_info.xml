@@ -1,0 +1,7 @@
+<odoo>
+  <template id="pos_receipt_inherit_hide_total_taxes"
+            inherit_id="OrderReceipt">
+    <!-- Remove the "Total Taxes" <div> in the receipt when tax is included -->
+    <xpath expr="//t[@t-if='isTaxIncluded']/div[contains(., 'Total Taxes')]" position="replace"/>
+  </template>
+</odoo>
